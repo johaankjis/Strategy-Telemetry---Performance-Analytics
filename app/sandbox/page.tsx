@@ -30,7 +30,7 @@ export default function SandboxPage() {
         setSelectedStrategy(data.strategies[0].strategy.id)
       }
     } catch (error) {
-      console.error("[v0] Error fetching strategies:", error)
+      console.error("[] Error fetching strategies:", error)
     }
   }
 
@@ -40,7 +40,7 @@ export default function SandboxPage() {
       const data = await response.json()
       setBaselineMetrics(data.performance)
     } catch (error) {
-      console.error("[v0] Error fetching baseline metrics:", error)
+      console.error("[] Error fetching baseline metrics:", error)
     }
   }
 
